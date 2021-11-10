@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="start"
+        android:text="開始對獎"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39">
+
+        <Button
+            android:id="@+id/JanFeb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="janfeb"
+            android:text="2022 1,2月發票" />
+
+        <Button
+            android:id="@+id/MarApr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="marapr"
+            android:text="2022 3,4月發票" />
+
+        <Button
+            android:id="@+id/MayJun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mayjun"
+            android:text="2022 5,6月發票" />
+
+        <Button
+            android:id="@+id/JulAug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="julaug"
+            android:text="2022 7,8月發票" />
+
+        <Button
+            android:id="@+id/SepOct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sepoct"
+            android:text="2022 9,10月發票" />
+
+        <Button
+            android:id="@+id/NovDec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="novdec"
+            android:text="2022 11,12月發票" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
